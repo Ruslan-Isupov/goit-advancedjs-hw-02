@@ -17,11 +17,11 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   min-width: 100vw;
   min-height: 100vh;
-  margin: 0;
+  margin: 25px 25px;
 }
 
 main {
@@ -29,4 +29,11 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+.general-list {
+  list-style: none;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

@@ -1,0 +1,80 @@
+.timer {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+  /* justify-content: center; */
+  /* margin: 0 auto; */
+  width: 346px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+#datetime-picker {
+  display: inline-block;
+  width: 272px;
+  padding: 8px 16px;
+  border-radius: 4px;
+border: 1px solid #808080;
+  /* margin: 0 auto; */
+font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #2E2F42;
+}
+button[data-start] {
+  display: inline-block;
+  width: 75px;
+  border: 1px solid #4e75ff;
+  border-radius: 8px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 8px;
+
+  /* margin: 0 auto; */
+}
+button[data-start]:hover {
+  border: 1px solid #6C8CFF;
+    border-radius: 8px;
+    background: #6C8CFF;;
+    color: #ffffff;
+    
+}
+button[data-start][disabled] {
+  background-color: #CFCFCF;
+  /* Disabled styling */
+  color: #989898;
+  cursor: not-allowed;
+  border: 1px solid #CFCFCF;
+}

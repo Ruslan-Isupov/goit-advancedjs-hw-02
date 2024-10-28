@@ -1,9 +1,4 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -16,3 +11,9 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* Timer style */
+@import url('./timer.css');
+
+/* Snackbar style */
+@import url('./snackbar.css');
