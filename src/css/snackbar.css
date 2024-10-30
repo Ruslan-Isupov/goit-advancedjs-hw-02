@@ -12,6 +12,7 @@
     padding:8px 16px;
 }
 fieldset{
+    margin-top: 16px;
     max-width: 360px;
     height: 64px;
     display: flex;
