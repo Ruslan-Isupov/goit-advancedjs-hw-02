@@ -17,8 +17,6 @@
 }
 
 body {
-  /* display: flex;
-  flex-direction: column; */
   min-width: 100vw;
   min-height: 100vh;
   margin: 25px 25px;
@@ -36,4 +34,5 @@ main:has(.back-link) {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100px;
 }

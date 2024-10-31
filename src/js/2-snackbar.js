@@ -27,7 +27,8 @@ function submitForm(e) {
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
       });
-    });
+    })
+    .finally(form.reset());
 }
 
 function createPromise(state, delay) {

@@ -23,17 +23,12 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0].getTime() <= options.defaultDate.getTime()) {
-      //   iziToast.error({
-      //     title: 'Error',
-      //     message: 'Please choose a date in the future',
-      //  position: 'topRight',
-      //   });
-
       iziToast.warning({
         title: 'Alert',
         message: 'Please choose a date in the future',
         position: 'topRight',
       });
+      setAttributeDefault();
     } else {
       userSelectedDate = selectedDates[0].getTime();
       buttonStart.removeAttribute('disabled');
@@ -62,6 +57,7 @@ function turnStart() {
 
   if (datedifference < 1000) {
     clearInterval(timerId);
+    mainInput.removeAttribute('disabled');
   }
 }
 
